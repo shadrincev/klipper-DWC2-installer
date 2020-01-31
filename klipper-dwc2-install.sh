@@ -272,7 +272,7 @@ if [ -d "$DIR" ] && [ -s "$SERV" ]; then
   mkdir -p ~/sdcard/dwc2/web
   echo "Downloading the official new DWC2 RC7, from Chrishamm GITHUB..."
   cd ~/sdcard/dwc2/web
-  wget https://github.com/chrishamm/DuetWebControl/releases/download/2.0.6/DuetWebControl-SBC.zip
+  wget https://github.com/chrishamm/DuetWebControl/releases/download/2.0.7/DuetWebControl-SD.zip
   echo "unzip the hell out of it..."
   unzip *.zip && for f_ in $(find . | grep '.gz');do gunzip ${f_};done
   echo "Installation done! Congrats!"
@@ -313,7 +313,7 @@ five(){
   echo "Downloading the official new DWC2 RC7, from Chrishamm GITHUB..."
   cd ~/sdcard/dwc2/web
   rm *.zip
-  wget https://github.com/chrishamm/DuetWebControl/releases/download/2.0.6/DuetWebControl-SBC.zip
+  wget https://github.com/chrishamm/DuetWebControl/releases/download/2.0.7/DuetWebControl-SD.zip
   echo "unzip the hell out of it..."
   unzip *.zip && for f_ in $(find . | grep '.gz');do gunzip ${f_};done
   rm *.zip
