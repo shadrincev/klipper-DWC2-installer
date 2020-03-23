@@ -154,7 +154,7 @@ while true
     Please choose the method needed:
     (1)Flash your MCU via serial USB
     (2)Flash your MCU via SDCARD
-    (3)Flash your MCU via serial USB
+    (3)Flash your MCU via serial TTY
     (Q)uit
     ---------------------------------
 EOF
@@ -220,8 +220,7 @@ EOF
       "3")  echo "Flashing the MCU with the new compiled micro firmware..."
             sleep 3
                 make flash FLASH_DEVICE=/dev/ttyS3
-                  sleep 2
-                fi
+                sleep 2
                 echo "Restarting KLIPPER service"
                 sudo systemctl start klipper
                 sleep 3
